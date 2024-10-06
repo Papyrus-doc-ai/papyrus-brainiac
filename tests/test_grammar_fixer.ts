@@ -1,6 +1,6 @@
 import {GrammarFixer} from "../src/clients/grammar_fixer.js";
 
-var document = `
+const document = `
 # Padrões 
 
 ## Quem?

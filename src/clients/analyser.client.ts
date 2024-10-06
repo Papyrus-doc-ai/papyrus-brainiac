@@ -20,7 +20,7 @@ export class Analiser {
   }
 
   async getSuggestionPoints(document : string) {
-    var prompt = `
+    const prompt = `
     What can be improved in the folowing document?
     --- BEGIN DOCUMENT ---
     ${document}

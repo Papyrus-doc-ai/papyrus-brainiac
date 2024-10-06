@@ -25,7 +25,7 @@ export class Generator {
   }
 
   async getQuestionForSuggestion(document : string, suggestion : string) {
-    var prompt = `
+    const prompt = `
       What information do you need to improve the document on the following problem:
       ${suggestion}
       --- BEGIN DOCUMENT ---
@@ -37,7 +37,7 @@ export class Generator {
 
   async updateDocumentWithAnswer(document : string, suggestion : string, answer : string) {
 
-    var prompt = `
+    const prompt = `
       ANSWER: ${answer}
       --- BEGIN DOCUMENT ---
       ${document}

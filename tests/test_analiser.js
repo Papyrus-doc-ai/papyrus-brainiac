@@ -1,5 +1,5 @@
 "use strict";
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+const __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
         function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
@@ -11,7 +11,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 const analiser_js_1 = require("../src/clients/analiser.js");
 const analiser = new analiser_js_1.Analiser(process.env.OPENAI_KEY);
-var document = `
+const document = `
 ### Parking Meter v2
 
 This screen is filled using the /geo/positions endpoint. To get these positions we will map zones to positions and if needed map fare_types into parent positons.

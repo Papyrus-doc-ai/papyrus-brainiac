@@ -1,5 +1,5 @@
 "use strict";
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+const __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
         function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
@@ -12,8 +12,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const readline_1 = require("readline");
 const generator_js_1 = require("../src/clients/generator.js");
 const generator = new generator_js_1.Generator(process.env.OPENAI_KEY);
-var suggestion = "Define acronyms like EMEL and EOS Server when they are first mentioned to improve clarity for readers.";
-var document = `
+const suggestion = "Define acronyms like EMEL and EOS Server when they are first mentioned to improve clarity for readers.";
+const document = `
 # Motivation
 
 With the new on-street features that have been done and the future ones that are planned, the need has started to arise to give these features to the parking meters and the unmanaged flow. This implied that the parking meters that want these features will have to simulate/calculate stays with an API instead of what happens now which is that they have the fares on their side.

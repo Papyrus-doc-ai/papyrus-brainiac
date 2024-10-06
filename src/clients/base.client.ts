@@ -9,12 +9,12 @@ export class Client {
   constructor(settings: ClientSettings, system_prompt : string, parser : any = new StringOutputParser()) {
     this.parser = parser
 
-    var prompt = ChatPromptTemplate.fromMessages([
+    const prompt = ChatPromptTemplate.fromMessages([
       ["system", system_prompt + "\n{format_instructions}"],
       ["assistant", "{assistant}"],
       ["user", "{prompt}"]
     ])
-    var model = new ChatOpenAI({
+    const model = new ChatOpenAI({
       openAIApiKey: settings.openAIKey,
       modelName: settings.gptModel,
     })

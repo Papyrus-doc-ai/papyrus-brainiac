@@ -1,5 +1,5 @@
 "use strict";
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+const __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
         function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
@@ -11,7 +11,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 const format_importer_js_1 = require("../src/format/format_importer.js");
 const importer = new format_importer_js_1.FormatImporter(process.env.OPENAI_KEY);
-var outline = `
+const outline = `
   [
     "Motivation",
     "As Is",
@@ -22,7 +22,7 @@ var outline = `
     "Doubts"
   ]
   `;
-var document = `
+const document = `
   O cliente quer que seja possível que os veículos com distintivo de 0 emissões não paguem as sessões e passes onstreet.
   Atualmente não é possível criar tarifas com custo 0. Também não é possível criar descontos de 100% para produtos onstreet.
   Temos que avaliar algumas opções para resolver este problema:

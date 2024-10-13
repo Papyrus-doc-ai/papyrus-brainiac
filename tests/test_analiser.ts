@@ -2,7 +2,7 @@ import {Analiser} from "../src/clients/analiser.js";
 
 const analiser = new Analiser(process.env.OPENAI_KEY!)
 
-var document = `
+const document = `
 ### Parking Meter v2
 
 This screen is filled using the /geo/positions endpoint. To get these positions we will map zones to positions and if needed map fare_types into parent positons.

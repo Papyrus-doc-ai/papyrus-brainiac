@@ -1,5 +1,5 @@
 "use strict";
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+const __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
         function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
@@ -10,7 +10,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const tech_check_js_1 = require("../src/clients/tech_check.js");
-var document = `
+const document = `
 #### Safety
 A broker should be a member of the SIPC and FINRA, this can probably be found in the website but can, and should, be searched in the associations websites. 
 What kind of insurance does the broker have in the case the company goes down? Members of SIPC are held to a minimum standard but brokers should cover a bit more.

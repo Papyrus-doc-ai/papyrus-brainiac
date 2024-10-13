@@ -2,7 +2,7 @@ import { FormatExporter } from "../src/format/format_exporter.js";
 
 const exporter = new FormatExporter(process.env.OPENAI_KEY!)
 
-var document = `
+const document = `
 - To properly implement this, we need information on all sessions created in a city (this means managed and unmanaged)
     
     - We also need information on the plates used in these sessions

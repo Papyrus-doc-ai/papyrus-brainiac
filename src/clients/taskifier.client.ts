@@ -34,7 +34,7 @@ export class Taskifier {
   }
 
   async getTasks(document : string) {
-    var prompt = `
+    const prompt = `
     --- BEGIN DOCUMENT ---
     ${document}
     --- END DOCUMENT ---

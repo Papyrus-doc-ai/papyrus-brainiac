@@ -10,7 +10,7 @@ export class FeedBackPersonaBot {
     private config : any;
     constructor(settings: ClientSettings, persona : string) {
 
-        var prompt = ChatPromptTemplate.fromMessages(
+        const prompt = ChatPromptTemplate.fromMessages(
             [
                 SystemMessagePromptTemplate.fromTemplate(`
                     You will receive a description of a persona that you should act as and a document in markdown format.
@@ -31,7 +31,7 @@ export class FeedBackPersonaBot {
                 ["human", "{message}"],
             ]
         )
-        var model = new ChatOpenAI({openAIApiKey: settings.openAIKey, modelName: settings.gptModel})
+        const model = new ChatOpenAI({openAIApiKey: settings.openAIKey, modelName: settings.gptModel})
         
         const runnable = prompt.pipe(model);
         this.messageHistory = new ChatMessageHistory();
@@ -48,11 +48,11 @@ export class FeedBackPersonaBot {
     }
   
     async question(document : string, question : string) {
-        var inputs = {
+        const inputs = {
             document: document, 
             message: question
         }
-        var response = await this.conversation.invoke(inputs, this.config)
+        const response = await this.conversation.invoke(inputs, this.config)
         return response.content
     }
   }

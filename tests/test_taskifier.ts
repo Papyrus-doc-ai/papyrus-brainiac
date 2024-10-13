@@ -2,7 +2,7 @@ import {Taskifier} from "../src/clients/taskifier.js";
 
 const taskifier = new Taskifier(process.env.OPENAI_KEY!)
 
-var document = `
+const document = `
 # Motivation
 
 With the new on-street features that have been done and the future ones that are planned, the need has started to arise to give these features to the parking meters and the unmanaged flow. This implied that the parking meters that want these features will have to simulate/calculate stays with an API instead of what happens now which is that they have the fares on their side.

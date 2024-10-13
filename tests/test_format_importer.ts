@@ -2,7 +2,7 @@ import { FormatImporter } from "../src/format/format_importer.js";
 
 const importer = new FormatImporter(process.env.OPENAI_KEY!)
 
-var outline = `
+const outline = `
   [
     "Motivation",
     "As Is",
@@ -14,7 +14,7 @@ var outline = `
   ]
   `
 
-var document = `
+const document = `
   O cliente quer que seja possível que os veículos com distintivo de 0 emissões não paguem as sessões e passes onstreet.
   Atualmente não é possível criar tarifas com custo 0. Também não é possível criar descontos de 100% para produtos onstreet.
   Temos que avaliar algumas opções para resolver este problema:
